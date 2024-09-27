@@ -1,14 +1,20 @@
 from flask import Flask, request, jsonify
+
+from predefined_recipes import all_recipes
 import os
 
 app = Flask(__name__)
 
 #Step 1
 @app.route('/generate_recipe', methods=['POST'])
-def generate_recipe(query):
+def generate_recipe():
     try:
+        # Parse the incoming JSON data
+        data = request.get_json()
+        query = data.get("query", "").lower()  # Get the query from the request and convert it to lowercase
         
-        return jsonify({"message": "Hello recipe!"}), 200
+        # Search for the recipe in the predefined recipes
+        return jsonify(all_recipes), 200
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
