@@ -1,4 +1,6 @@
 from flask import Flask, request, jsonify
+from dendrite_sdk import Dendrite
+from dendrite_key import DENDRITE_API_KEY
 
 from predefined_recipes import all_recipes
 from flask_cors import CORS
