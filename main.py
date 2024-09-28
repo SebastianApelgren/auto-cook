@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from dendrite_sdk import Dendrite
 from dendrite_key import DENDRITE_API_KEY
 
-from predefined_recipes import all_recipes
+from predefined_recipes import chicken_recipes, chorizo_recipes
 from predefined_sales import products_updated as sales_items
 from flask_cors import CORS
 import time
@@ -20,8 +20,12 @@ def generate_recipe():
         data = request.get_json()
         time.sleep(4)
         query = data.get("query", "").lower()  # Get the query from the request and convert it to lowercase
+        if "chicken" in query:
+            return jsonify(chicken_recipes), 200
+        if "chorizo" in query:
+            return jsonify(chorizo_recipes), 200
         # Search for the recipe in the predefined recipes
-        return jsonify(all_recipes), 200
+        return jsonify(chorizo_recipes), 200
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500

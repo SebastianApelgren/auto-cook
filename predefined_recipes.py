@@ -79,4 +79,81 @@ recipe3 = Recipe(
     image_url=get_unsplash_image_url("Pasta Alfredo with Chicken")  # Replace with an actual image URL from Unsplash   
 )
 
-all_recipes = [recipe1.to_dict(), recipe2.to_dict(), recipe3.to_dict()]
+chicken_recipes = [recipe1.to_dict(), recipe2.to_dict(), recipe3.to_dict()]
+
+# 1. Chorizo and Potato Hash
+recipe4 = Recipe(
+    name="Chorizo and Potato Hash",
+    ingredients=[
+        Ingredient("Chorizo", "200g, sliced", 3.00),
+        Ingredient("Potatoes", "3 medium, diced", 1.50),
+        Ingredient("Onion", "1, chopped", 0.50),
+        Ingredient("Red Bell Pepper", "1, chopped", 1.20),
+        Ingredient("Garlic", "2 cloves, minced", 0.20),
+        Ingredient("Olive Oil", "2 tbsp", 0.40),
+        Ingredient("Salt", "to taste", 0.05),
+        Ingredient("Black Pepper", "to taste", 0.10),
+        Ingredient("Parsley", "1 tbsp, chopped (optional)", 0.15),
+    ],
+    instructions="""
+    1. Heat olive oil in a large skillet over medium heat. Add the diced potatoes and cook for 10-12 minutes until tender and golden brown.
+    2. Add the onion, red bell pepper, and garlic. Cook until the onion becomes translucent.
+    3. Add the sliced chorizo and cook for another 5-7 minutes until the chorizo is cooked through.
+    4. Season with salt and pepper to taste. Garnish with chopped parsley before serving.
+    """,
+    image_url=get_unsplash_image_url("Chorizo and Potato Hash")  # Replace with an actual image URL from Unsplash
+)
+
+# 2. Chorizo and Chickpea Stew
+recipe5 = Recipe(
+    name="Chorizo and Chickpea Stew",
+    ingredients=[
+        Ingredient("Chorizo", "150g, sliced", 2.50),
+        Ingredient("Chickpeas", "1 can (400g), drained", 1.00),
+        Ingredient("Onion", "1, chopped", 0.50),
+        Ingredient("Garlic", "2 cloves, minced", 0.20),
+        Ingredient("Canned Tomatoes", "1 can (400g)", 1.00),
+        Ingredient("Paprika", "1 tsp", 0.10),
+        Ingredient("Cumin", "1/2 tsp", 0.10),
+        Ingredient("Olive Oil", "1 tbsp", 0.20),
+        Ingredient("Salt", "to taste", 0.05),
+        Ingredient("Black Pepper", "to taste", 0.10),
+        Ingredient("Spinach", "2 cups", 1.00),
+    ],
+    instructions="""
+    1. Heat olive oil in a pot over medium heat. Add the onion and garlic, sauté until soft.
+    2. Add the sliced chorizo and cook for 5 minutes until browned.
+    3. Stir in the canned tomatoes, chickpeas, paprika, and cumin. Bring to a simmer.
+    4. Cook for 10-15 minutes to allow flavors to blend. Stir in the spinach until wilted.
+    5. Season with salt and pepper, then serve hot.
+    """,
+    image_url=get_unsplash_image_url("Chorizo and Chickpea Stew")  # Replace with an actual image URL from Unsplash
+)
+
+# 3. Chorizo Pasta
+recipe6 = Recipe(
+    name="Chorizo Pasta",
+    ingredients=[
+        Ingredient("Pasta", "300g (e.g., penne or fusilli)", 1.50),
+        Ingredient("Chorizo", "150g, sliced", 2.50),
+        Ingredient("Cherry Tomatoes", "200g, halved", 1.50),
+        Ingredient("Garlic", "2 cloves, minced", 0.20),
+        Ingredient("Olive Oil", "2 tbsp", 0.40),
+        Ingredient("Heavy Cream", "1/2 cup", 1.00),
+        Ingredient("Parmesan Cheese", "1/4 cup, grated", 0.70),
+        Ingredient("Salt", "to taste", 0.05),
+        Ingredient("Black Pepper", "to taste", 0.10),
+        Ingredient("Basil Leaves", "a handful (optional)", 0.50),
+    ],
+    instructions="""
+    1. Cook the pasta according to the package instructions until al dente. Drain and set aside.
+    2. Heat olive oil in a skillet over medium heat. Add the garlic and cook until fragrant.
+    3. Add the sliced chorizo and cook for 5-6 minutes until browned.
+    4. Stir in the cherry tomatoes and cook until they start to soften.
+    5. Add the heavy cream and bring to a simmer. Stir in the cooked pasta and grated Parmesan cheese.
+    6. Season with salt and pepper to taste. Garnish with basil leaves before serving.
+    """,
+    image_url=get_unsplash_image_url("Chorizo Pasta")  # Replace with an actual image URL from Unsplash
+)
+
+chorizo_recipes = [recipe4.to_dict(), recipe5.to_dict(), recipe6.to_dict()]
