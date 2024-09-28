@@ -40,7 +40,7 @@ def openai_query():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-@app.route('/get_sale_items', methods=['POST'])
+@app.route('/get_sale_items', methods=['GET'])
 def get_sale_items():
     try:
 

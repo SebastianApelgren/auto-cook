@@ -22,7 +22,7 @@ recipe1 = Recipe(
         Ingredient("Salt", "to taste", 0.05),
     ],
     instructions="""
-    1. Heat oil in a large pan over medium heat. Add garlic and ginger, sauté until fragrant.
+    Heat oil in a large pan over medium heat. Add garlic and ginger, sauté until fragrant.
     2. Add the chicken breast and cook until lightly browned.
     3. Stir in the red curry paste and cook for 1-2 minutes until aromatic.
     4. Add coconut milk, bell peppers, and carrots. Bring to a simmer.
@@ -45,7 +45,7 @@ recipe2 = Recipe(
         Ingredient("Black Pepper", "to taste", 0.10),
     ],
     instructions="""
-    1. In a large bowl, add the chopped romaine lettuce.
+    In a large bowl, add the chopped romaine lettuce.
     2. Add the cooked and sliced chicken breast, croutons, and Parmesan cheese.
     3. Drizzle with Caesar dressing and toss to combine.
     4. Season with salt and pepper to taste, and serve immediately.
@@ -68,7 +68,7 @@ recipe3 = Recipe(
         Ingredient("Parsley", "1 tbsp, chopped (optional)", 0.15),
     ],
     instructions="""
-    1. Cook the fettuccine according to the package instructions until al dente.
+    Cook the fettuccine according to the package instructions until al dente.
     2. In a large skillet, melt butter over medium heat. Add garlic and sauté until fragrant.
     3. Add the sliced chicken breast and cook until fully cooked through.
     4. Stir in the heavy cream and let it simmer for 3-4 minutes.
@@ -96,7 +96,7 @@ recipe4 = Recipe(
         Ingredient("Parsley", "1 tbsp, chopped (optional)", 0.15),
     ],
     instructions="""
-    1. Heat olive oil in a large skillet over medium heat. Add the diced potatoes and cook for 10-12 minutes until tender and golden brown.
+    Heat olive oil in a large skillet over medium heat. Add the diced potatoes and cook for 10-12 minutes until tender and golden brown.
     2. Add the onion, red bell pepper, and garlic. Cook until the onion becomes translucent.
     3. Add the sliced chorizo and cook for another 5-7 minutes until the chorizo is cooked through.
     4. Season with salt and pepper to taste. Garnish with chopped parsley before serving.
@@ -121,7 +121,7 @@ recipe5 = Recipe(
         Ingredient("Spinach", "2 cups", 1.00),
     ],
     instructions="""
-    1. Heat olive oil in a pot over medium heat. Add the onion and garlic, sauté until soft.
+    Heat olive oil in a pot over medium heat. Add the onion and garlic, sauté until soft.
     2. Add the sliced chorizo and cook for 5 minutes until browned.
     3. Stir in the canned tomatoes, chickpeas, paprika, and cumin. Bring to a simmer.
     4. Cook for 10-15 minutes to allow flavors to blend. Stir in the spinach until wilted.
@@ -146,7 +146,7 @@ recipe6 = Recipe(
         Ingredient("Basil Leaves", "a handful (optional)", 0.50),
     ],
     instructions="""
-    1. Cook the pasta according to the package instructions until al dente. Drain and set aside.
+    Cook the pasta according to the package instructions until al dente. Drain and set aside.
     2. Heat olive oil in a skillet over medium heat. Add the garlic and cook until fragrant.
     3. Add the sliced chorizo and cook for 5-6 minutes until browned.
     4. Stir in the cherry tomatoes and cook until they start to soften.
